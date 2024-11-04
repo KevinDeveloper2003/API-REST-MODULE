@@ -4,9 +4,10 @@
   "description": "a module of API REST for charge in DOCKER image",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon Servidor.js",
+    "start": "node ."
   },
-  "author": "",
+  "author": "Kevin",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.1",
