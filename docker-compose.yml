@@ -6,7 +6,7 @@ services:
     build: 
       context: .
     ports:
-      - "6058:4322"
+      - "6058:4444"
     links:
       - mongodb
     networks:
@@ -17,7 +17,7 @@ services:
     build: 
       context: .
     ports:
-      - "6059:4322"
+      - "6059:4444"
     links:
       - mongodb
     networks:
