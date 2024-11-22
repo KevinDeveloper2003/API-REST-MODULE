@@ -32,25 +32,26 @@ const ProyectoSchema = new mongoose.Schema({
     default: Date.now
   },
   cliente: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Cliente',
+    type: String,
+    unique: true,
     required: true
   },
   tipoProyecto: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'TipoProyecto',
+    type: String,
+    unique: true,
     required: true
   },
   universidad: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Universidad',
+    type: String,
+    unique: true,
     required: true
   },
   etapa: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Etapa',
+    type: String,
+    unique: true,
     required: true
-  }
+  },
+
 });
 
 // Creamos y expotamos el modelo Proyecto

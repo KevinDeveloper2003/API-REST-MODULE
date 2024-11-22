@@ -28,13 +28,13 @@ services:
     build: 
       context: ./Tools
     ports:
-      - "6061:83"
+      - "6061:80"
     networks:
       - mynetwork
   mongodb:
     image: mongo
     ports:
-      - "27017:27017"
+      - "27017:4444"
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: admin
