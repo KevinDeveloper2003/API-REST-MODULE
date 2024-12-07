@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clonacion del Repositorio') {
             steps {
-                git branch: 'main', url: 'https://github.com/KevinDeveloper2003/APIRest.git'
+                git branch: 'main', url: 'https://github.com/KevinDeveloper2003/API-REST-MODULE.git'
             }
         }
         stage('Construccion de Docker image') {
